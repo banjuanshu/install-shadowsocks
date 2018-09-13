@@ -29,7 +29,9 @@ cat <<EOF | sudo tee ${CONFIG_FILE}
 {
   "server": "0.0.0.0",
   "server_port": ${SS_PORT},
-  "password": "${SS_PASSWORD}",
+  "port_password":{
+        "8388":"${SS_PASSWORD}"
+  }
   "method": "${SS_METHOD}"
 }
 EOF
