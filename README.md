@@ -19,3 +19,16 @@ password:    RaskAAcW0IQrVcA7n0QLCEphhng7K4Yc
 method:      aes-256-cfb
 --------------------------------
 ```
+
+
+### 启动Shadowsocks
+
+```
+ssserver -c /etc/shadowsocks.json -d start
+```
+
+### 关闭Shadowsocks
+
+```
+ssserver -c /etc/shadowsocks.json -d stop
+```
